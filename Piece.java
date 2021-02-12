@@ -1,5 +1,5 @@
 public class Piece {
-
+// Parent class for each piece
     int x,y;
     String color;
 
