@@ -1,7 +1,11 @@
 public class Pawn extends Piece {
-    Boolean Alive = true;
-    Boolean moveForward = false;
-    boolean attack = false;
-    Boolean playerInFront = false;
+
+    public Pawn(int x, int y, boolean isWhite)
+    {
+        super(x, y, isWhite);
+        this.x = x;
+        this.y = y;
+        this.isWhite = isWhite;
+    }
 
 }
