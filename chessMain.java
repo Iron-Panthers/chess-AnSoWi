@@ -1,6 +1,6 @@
 public class chessMain
 {
-    public static String[][] chessBoard = new String[8][8];
+    public static Piece[][] chessBoard = new Piece[8][8];
     public static void main(String[] args)
     {
         // initialize chess pieces
