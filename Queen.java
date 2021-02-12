@@ -1,4 +1,4 @@
-private class Queen extends Piece {
+public class Queen extends Piece {
     private boolean isWhite;
     private int x;
     private int y;
