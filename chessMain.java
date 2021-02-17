@@ -42,7 +42,7 @@ public class chessMain
                  System.out.print("[" + chessBoard[x][y] + "]    ");
  
              }
-             System.out.println("");
+             System.out.print("\n\n");
              System.out.println("");
          }
     }
