@@ -109,7 +109,7 @@ public class Rook extends Piece {
 //         }
 
 //         //can't jump over pieces
-//         if (direction.equals("south")) {
+//         if (direction.equals()) {
 //             int spaces_to_move = Math.abs(destination_y - this.getY());
 //             for (int i = 0; i < spaces_to_move; i++) {
                 
