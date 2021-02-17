@@ -6,6 +6,7 @@ public class chessMain
         // initialize chess pieces
         pieceInit();
         printBoard();
+        Rook one = new Rook(8, 8, true);
     }
 
 
