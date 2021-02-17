@@ -1,10 +1,6 @@
 public class Rook extends Piece {
 	private boolean isWhite;
-    private int x;
-    private int y;
-
-
-
+    private int x, y;
 
     public Rook(int x, int y, boolean isWhite)
     {
@@ -13,13 +9,6 @@ public class Rook extends Piece {
         this.y = y;
         this.isWhite = isWhite;
     }
-
-
-
-
-
-
-
 
 //     public Rook(boolean color, int number) //Rook sophie = new rook(false, 2)
 //     {
