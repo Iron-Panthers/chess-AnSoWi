@@ -6,3 +6,5 @@ public class Bishop extends Piece {
         this.x = x;
         this.y = y;
         this.isWhite = isWhite;
+    }
+}
