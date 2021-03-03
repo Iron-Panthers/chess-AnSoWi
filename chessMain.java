@@ -64,6 +64,30 @@ public class chessMain
         chessBoard[0][7] = whitePieces[1][0];   chessBoard[7][7] = whitePieces[1][1];
 
 
+        // Assign knights
+        whitePieces[3][0] = new Knight(1, 7, true, "WK - 1"); whitePieces[3][1] = new Knight(6, 7, true, "WK - 2");
+        blackPieces[3][0] = new Knight(1, 0, false, "BK - 1"); blackPieces[3][1] = new Knight(6, 0, false, "BK - 2");
+
+        //Assign knights to board
+        chessBoard[1][0] = blackPieces[3][0];   chessBoard[6][0] = blackPieces[3][1];
+        chessBoard[1][7] = whitePieces[3][0];   chessBoard[6][7] = whitePieces[3][1];
+
+        //Assign Bishops
+        whitePieces[2][0] = new Bishop(2, 7, true, "WB - 1"); whitePieces[2][1] = new Bishop(5, 7, true, "WB - 2");
+        blackPieces[2][0] = new Bishop(2, 0, false, "BB - 1"); blackPieces[2][1] = new Bishop(5, 0, false, "BB - 2");
+        
+        //Assign Bishops to board
+        chessBoard[2][0] = blackPieces[2][0];   chessBoard[5][0] = blackPieces[2][1];
+        chessBoard[2][7] = whitePieces[2][0];   chessBoard[5][7] = whitePieces[2][1];
+
+        // assign queen/king
+        whitePieces[4][0] = new Queen(3, 7, true, "WQ - 1"); whitePieces[5][0] = new King(4, 7, true, "WK* - 1");
+        blackPieces[4][0] = new Queen(3, 0, false, "BQ - 1"); blackPieces[5][0] = new King(4, 0, false, "BK* - 1");
+
+        //Assign king/queen to board
+        chessBoard[3][0] = blackPieces[4][0];   chessBoard[4][0] = blackPieces[5][0];
+        chessBoard[3][7] = whitePieces[4][0];   chessBoard[4][7] = whitePieces[5][0];
+
         
 
     }
