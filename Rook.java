@@ -10,9 +10,78 @@ public class Rook extends Piece {
         this.name = name;
     }
 
+    //Has to go either forward or backwards (no diagonal)
+    public int getX() {
+        return x;
+    }
+    public int getY() {
+        return y;
+    }
+    public boolean isWhite() {
+        return isWhite;
+    }
+    public boolean inMovingRange(int destination_x, int destination_y) 
+    {
+        if(destination_x == x || destination_y == y) 
+        {
+            return true;
+        }
+        else 
+        {
+            return false;
+        }
+    }
+    //still on the board
+    public boolean isOnBoard(int destination_x, int destination_y)
+    {
+        if(destination_x > 8 || destination_x < 0) {
+            return false;
+        }
+        if(destination_y > 8 || destination_y < 0) {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+
+
+    public boolean canMove(int destination_x, int destination_y, boolean isWhite, boolean isBlack) {
+        //can't kill our own piece
+        Piece possiblePiece = chessMain.getPiece(destination_x, destination_y);
+        
+        if (possiblePiece != null)
+        {
+        if (possiblePiece.isWhite() && this.isWhite()) {
+            return false;
+        }
+        if (!possiblePiece.isWhite() && !this.isWhite()) {
+            return false;
+        }
+    }
+        //has to move in a straight line
+        if (this.getX() != destination_x && this.getY() != destination_y) {
+            return false;
+        }
+
+<<<<<<< Updated upstream
     
 
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
 //     public Rook(boolean color, int number) //Rook sophie = new rook(false, 2)
+=======
+
+
+
+
+
+
+
+//     public Rook(boolean color, int number) 
+>>>>>>> Stashed changes
 //     {
 //         if(color) 
 //         {
