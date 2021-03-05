@@ -34,10 +34,10 @@ public class Rook extends Piece {
     //still on the board
     public boolean isOnBoard(int destination_x, int destination_y)
     {
-        if(destination_x > 8 || destination_x < 0) {
+        if(destination_x >= 8 || destination_x < 0) {
             return false;
         }
-        if(destination_y > 8 || destination_y < 0) {
+        if(destination_y >= 8 || destination_y < 0) {
             return false;
         }
         else
