@@ -106,7 +106,7 @@ public class chessMain
                  // print the value of the chess board piece
                  if (chessBoard[x][y] != null)
                  {
-                    System.out.print("[" + chessBoard[x][y].getName() + "]    ");
+                    System.out.print("[" + chessBoard[x][y].name + "]    ");
                  }else 
                  {
                     System.out.print("[" + chessBoard[x][y] + "]    ");
