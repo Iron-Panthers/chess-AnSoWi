@@ -1,8 +1,8 @@
 public class Piece {
 // Parent class for each piece
-    int x,y;
-    boolean isWhite;
-    String name;
+    public int x,y;
+    public boolean isWhite;
+    public String name;
 
 
     public Piece(int x, int y, Boolean isWhite, String name)
@@ -13,10 +13,7 @@ public class Piece {
         this.name = name;
     }
 
-    public String getName()
-    {
-        return name;
-    }
+    
 
 
 }
